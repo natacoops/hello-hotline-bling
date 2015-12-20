@@ -1,0 +1,664 @@
+<!-- 
+
+Hi! Thanks for checking out my code. Let's be online friends -- @natacoops
+
+┌─┐ ┌┐┌┌─┐┌┬┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
+│└┘ │││├─┤ │ ├─┤│  │ ││ │├─┘└─┐
+└── ┘└┘┴ ┴ ┴ ┴ ┴└─┘└─┘└─┘┴  └─┘
+
+Code for Animated Gradient background inspired by Mario Klingemann (@quasimondo): https://twitter.com/quasimondo | http://codepen.io/quasimondo/pen/lDdrF
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="img/ncooper-favicon2.png">
+	<title>Nat Cooper 2016</title>
+	<link href='https://fonts.googleapis.com/css?family=Elsie|Elsie+Swash+Caps:400,900|Lato:100,300,700,700italic,400italic,100italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/devicons.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="gradient">
+	<span class="top-border"></span>
+	<span class="btm-border"></span>
+	<div class="svg-wrap">
+		<svg x="0px" y="0px" width="911px" height="816.25px" viewBox="0 0 911 816.25" >
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="752.357" cy="481.037" r="24.334"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M122.615,330.762
+			c11.555-5.992,24.68-9.376,38.594-9.376c31.391,0,59.01,16.448,73.416,41.966"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M474.689,652.895
+			c-4.047,4.689-10.029,7.657-16.706,7.657c-12.182,0-22.055-9.871-22.055-22.049c0-12.182,9.873-22.056,22.055-22.056
+			c12.177,0,22.05,9.874,22.05,22.056c0,4.952-1.633,9.521-4.393,13.202"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M769.844,431.877
+			c23.287,0,42.167,18.879,42.167,42.167s-18.88,42.168-42.167,42.168c-21.438,0-39.145-16.002-41.816-36.714"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M736.467,441.086
+			c-4.483,1.59-9.311,2.457-14.339,2.457c-23.683,0-42.88-19.198-42.88-42.879c0-23.685,19.197-42.88,42.88-42.88
+			c5.463,0,10.689,1.021,15.494,2.886"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="720.92" cy="318.934" r="13.124"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="728.834" cy="565.336" r="14.79"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="428.479" cy="324.061" r="35.458"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.6388" stroke-miterlimit="10" cx="720.92" cy="391.654" r="34.03"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M718.988,354.857"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M762.648,407.186
+			c0,11.246-5.498,21.566-13.648,28.083"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M318.672,642.378
+			c-20.936,2.697-40.1-12.082-42.8-33.021c-2.7-20.937,12.083-40.098,33.02-42.798s40.1,12.082,42.8,33.018
+			c2.647,20.535-11.521,39.36-31.815,42.626"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M408.892,492.54
+			c0,20.564-16.672,37.233-37.231,37.233c-20.562,0-37.232-16.669-37.232-37.232c0-20.562,16.67-37.231,37.232-37.231"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.4959" stroke-miterlimit="10" d="M408.999,493.522
+			c0,35.925-29.122,65.046-65.045,65.046c-35.921,0-65.044-29.121-65.044-65.046c0-25.196,14.329-47.046,35.279-57.849"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M766.7,431.954c1.042-0.05,2.09-0.072,3.144-0.072
+			c35.869,0,64.95,29.077,64.95,64.947c0,35.873-29.081,64.953-64.95,64.953c-35.872,0-64.951-29.08-64.951-64.953
+			C704.893,462.011,732.289,433.592,766.7,431.954"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M736.094,603.096
+			c1.353-0.429,2.717-0.824,4.102-1.191c47.054-12.46,95.302,15.583,107.761,62.642c6.76,25.525,1.6,51.402-12.05,71.729"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M369.101,639.599
+			c1.082-0.052,2.171-0.077,3.266-0.077c37.223,0,67.396,30.174,67.396,67.398c0,37.224-30.176,67.397-67.396,67.397
+			c-37.228,0-67.398-30.176-67.398-67.397C304.966,670.79,333.395,641.3,369.101,639.599"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M705.624,491.622
+			c0,75.631-61.31,136.937-136.932,136.937c-75.627,0-128.021-47.51-134.688-116.788"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M396.913,445.038
+			c25.266,21.387,39.807,53.82,38.57,89.474c-2.146,61.776-53.962,110.122-115.738,107.979c-0.541-0.019-1.082-0.041-1.621-0.064"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M369.302,440.499
+			c17.468,12.587,31.496,30.34,39.498,52.062c21.369,58.006-8.334,122.349-66.337,143.717c-6.217,2.29-17.486,4.955-23.791,6.102"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M490.626,519.388"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M530.333,463.268
+			c-6.468-10.691-3.227-24.909,7.464-31.375"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M530.073,463.991
+			c8.371-7.583,21.305-6.941,28.889,1.429"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M593.039,469.43
+			c6.327-7.609,17.623-8.648,25.229-2.322"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M559.374,303.659
+			c18.122,38.892,14.61,67.692-7.868,113.352"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M512.609,541.114"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M624.021,541.114"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M513.333,541.769
+			c-0.744,14.208,14.396,25.106,32.583,25.711"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M545.438,567.29
+			c12.243,10.909,32.79,10.817,45.875,0"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M512.609,541.114
+			c13.583,0.646,32.057-3.845,36.974-9.262"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M548.917,532.518
+			c1.918-2.169,4.814-3.447,8.398-3.448c5.854,0,10.599,3.78,10.599,8.443l0.002,38.256"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M623.312,541.477
+			c0.74,14.208-14.29,25.354-32.479,25.958"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M624.021,541.114
+			c-13.584,0.646-27.187-2.598-38.104-10.596"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M586.333,530.81c-1.875-1.5-4.072-1.74-7.018-1.74
+			c-5.257,0-10.562,3.371-11.398,7.366"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="428.479" cy="428.693" r="26.116"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M762.625,407.602
+			c0-16.037,13.445-30.179,29.485-30.179c16.036,0,29.038,13.004,29.038,29.042s-13.002,29.039-29.038,29.039"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.4902" stroke-miterlimit="10" d="M459.909,307.725
+			c5.617,7.851,8.922,17.468,8.922,27.855c0,26.473-21.461,47.932-47.932,47.932"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M424.413,454.538
+			c-24.668-0.332-38.847-15.957-38.847-35.547s15.879-35.47,35.47-35.47"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="386.973" cy="369.504" r="24.451"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M735.819,603.153
+			c-10.133,5.737-23.151,5.125-32.833-2.557c-12.743-10.111-14.876-28.638-4.77-41.38c10.111-12.742,28.641-14.876,41.38-4.769"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M308.782,388.398
+			c-21.482,0-38.899-17.417-38.899-38.898c0-21.484,17.417-38.9,38.899-38.9c15.59,0,29.038,9.171,35.243,22.412"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M343.898,333.079
+			c5.952,10.804,9.341,23.22,9.341,36.427c0,29.547-16.957,55.135-41.67,67.561"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M305.65,388.281
+			c-11.221-1.226-19.953-10.736-19.953-22.285c0-12.386,10.034-22.418,22.412-22.418c12.395,0,22.424,10.032,22.424,22.418
+			c0,12.38-10.029,22.418-22.424,22.418"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M436.278,422.249c0,4.307-3.49,7.799-7.804,7.799
+			c-4.307,0-7.798-3.492-7.798-7.799c0-4.312,3.491-7.803,7.798-7.803C432.788,414.449,436.278,417.94,436.278,422.249z"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M305.477,519.579
+			c-11.949-1.884-21.087-12.228-21.087-24.704c0-13.813,11.198-25.013,25.011-25.013c13.814,0,25.012,11.196,25.012,25.013"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M416.843,656.04
+			c-7.752-7.297-12.59-17.648-12.59-29.137c0-22.096,17.911-40.01,40.008-40.01c22.1,0,40.011,17.914,40.011,40.01
+			c0,10.238-3.847,19.58-10.173,26.656"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" cx="262.495" cy="550.995" r="20.5"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M103.919,377.576
+			c-1.303-3.873-2.009-8.02-2.009-12.331c0-21.354,17.312-38.667,38.668-38.667c21.354,0,38.666,17.312,38.666,38.667
+			c0,17.809-11.695,32.786-28.078,37.275"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="308.412" cy="507.912" r="12"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="370.745" cy="475.245" r="20"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="367.932" cy="420.512" r="10.602"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M787.958,434.723
+			c-9.238-2.507-14.695-12.029-12.188-21.269c2.51-9.238,12.03-14.695,21.271-12.188s14.696,12.03,12.188,21.269
+			c-2.396,8.829-12.067,14.039-20.907,12.312"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M255.371,520.329
+			c-14.193,26.082-41.843,43.783-73.626,43.783c-46.263,0-83.767-37.504-83.767-83.767c0-35.336,22.239-65.521,53.188-77.825"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M223.043,535.156
+			c-10.6-3.402-18.271-13.346-18.271-25.075c0-14.545,11.79-26.334,26.334-26.334s26.334,11.789,26.334,26.334
+			c0,3.638-0.736,7.102-2.068,10.248"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M206.696,423.658
+			c5.911,8.395,9.382,18.626,9.382,29.671c0,28.488-23.096,51.584-51.583,51.584c-28.489,0-51.584-23.096-51.584-51.584
+			c0-14.532,4.041-26.351,13.714-35.727"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" cx="226.483" cy="523.477" r="12.1"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M229.714,357.903
+			c4.752,4.232,8.265,9.934,9.76,16.58"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M229.719,404.918
+			c-4.062,3.634-9.125,6.259-14.861,7.394c-17.065,3.376-33.639-7.722-37.015-24.788c-3.376-17.064,7.722-33.639,24.788-37.015
+			c10.069-1.992,19.966,1.055,27.083,7.394"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="226.411" cy="381.412" r="14.833"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="179.58" cy="444.078" r="34"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M239.563,630.701
+			c0.022,0.536,0.033,1.075,0.033,1.617c0,21.517-17.438,38.952-38.951,38.952c-21.512,0-38.95-17.438-38.95-38.952
+			c0-14.477,7.897-27.105,19.618-33.822"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M369.507,655.91
+			c0.947-0.044,1.9-0.064,2.857-0.064c32.594,0,59.018,26.423,59.018,59.018c0,32.598-26.424,59.021-59.018,59.021
+			c-32.6,0-59.021-26.424-59.021-59.021C313.347,683.223,338.24,657.399,369.507,655.91"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M839.206,730.7
+			c-7.617,13.429-20.419,23.896-36.521,28.157c-31.769,8.412-64.338-10.52-72.747-42.286c-8.411-31.766,10.521-64.336,42.283-72.747
+			c4.417-1.17,8.853-1.811,13.23-1.962"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M119.16,535.538
+			c4.174,9.92,5.532,21.149,3.281,32.5c-4.854,24.459-24.985,41.997-48.506,44.66"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M32.768,806.115
+			c-11.751-8.471-19.401-22.273-19.4-37.871c0-25.766,20.888-46.649,46.653-46.649c2.211,0,4.386,0.15,6.515,0.451"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="788.806" cy="687.701" r="45.538"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M286.125,578.102
+			c-5.156,5.376-11.176,7.601-19.213,7.601c-15.648,0-28.334-12.686-28.334-28.333c0-8.985,4.187-17,10.715-22.188"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="124.549" cy="368.957" r="21.949"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="115.549" cy="359.957" r="9.333"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M182.186,701.639
+			c-3.961,0.699-8.036,1.062-12.197,1.062c-38.514,0-69.734-31.221-69.734-69.73c0-38.517,31.221-69.734,69.734-69.734
+			c37.752,0,68.496,29.999,69.697,67.457"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="276.952" cy="668.85" r="16.5"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M180.293,702.144
+			c3.395-0.591,6.888-0.899,10.452-0.899c33.413,0,60.5,27.086,60.5,60.499c0,33.412-27.087,60.5-60.5,60.5
+			c-25.5,0-47.315-15.773-56.219-38.102"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" cx="192.313" cy="615.716" r="20.333"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M72.26,722.254
+			c-19.592-1.523-35.015-17.902-35.015-37.885c0-20.984,17.013-38,38-38c15.387,0,28.638,9.146,34.613,22.299"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="72.579" cy="703.704" r="18.667"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M369.464,440.624
+			c-7.258-4.223-12.462-12.739-12.075-21.709"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M744.452,778.619
+			c-46.617-23.773-78.541-72.236-78.541-128.157c0-34.002,11.804-65.248,31.538-89.863"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M59.221,720.631
+			c28.635,2.754,51.024,26.88,51.024,56.235"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="110.049" cy="788.369" r="10"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M333.401,781.71
+			c-4.854,1.213-9.931,1.854-15.157,1.854c-34.425,0-62.332-27.908-62.332-62.332c0-14.083,4.669-27.073,12.545-37.51"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="332.579" cy="797.036" r="15.333"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M183.745,701.37c-33.966,0-61.5-27.531-61.5-61.5
+			c0-26.719,17.038-49.457,40.843-57.941"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M699.438,649.315
+			c4.481-27.211,27.584-48.439,56.217-49.549"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="713.998" cy="655.892" r="16"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M74.074,612.5
+			c-10.376,0.224-20.676-4.543-27.121-13.654c-10.313-14.578-6.856-34.756,7.721-45.069c14.578-10.312,34.758-6.854,45.07,7.724
+			c3.344,4.727,5.241,10.043,5.779,15.419"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="89.208" cy="577.51" r="16.655"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M261.732,620.944
+			c-2.358,1.024-4.961,1.593-7.696,1.593c-10.677,0-19.333-8.653-19.333-19.333c0-10.679,8.656-19.334,19.333-19.334
+			c1.335,0,2.638,0.138,3.896,0.396"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M259.732,621.657
+			c-0.691,0.166-1.412,0.254-2.154,0.254c-5.062,0-9.166-4.104-9.166-9.166c0-5.062,4.104-9.167,9.166-9.167s9.167,4.104,9.167,9.167
+			c0,3.791-2.301,7.043-5.583,8.438"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="52.745" cy="772.869" r="38.5"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="371.245" cy="581.245" r="12"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M97.032,740.583
+			c-5.429-5.433-8.787-12.933-8.787-21.216c0-16.565,13.432-30,30-30c16.568,0,30,13.435,30,30c0,10.613-5.513,19.94-13.831,25.273"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M179.285,716.954
+			c0.979-0.057,1.967-0.084,2.96-0.084c28.167,0,51,22.833,51,50.999s-22.833,51-51,51s-51-22.834-51-51
+			C131.245,740.696,152.496,718.487,179.285,716.954"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="129.245" cy="732.369" r="13"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M145.547,802.066
+			c-7.601-7.6-12.302-18.1-12.302-29.697c0-22.188,17.209-40.357,39.009-41.895"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="173.245" cy="752.369" r="22"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M787.244,578.399
+			c56.561,1.328,102.001,47.593,102.001,104.471c0,57.716-46.786,104.499-104.5,104.499c-15.929,0-31.024-3.561-44.534-9.938"/>
+		<circle fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" cx="788.245" cy="621.37" r="11"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M709.398,312.642
+			c5.936-11.258,18.197-18.465,31.679-17.314c17.972,1.535,31.295,17.346,29.761,35.315c-1.535,17.972-17.346,31.295-35.315,29.761"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M203.838,237.575
+			c16.094,6.807,27.387,22.742,27.387,41.314c0,24.763-20.076,44.838-44.839,44.838c-24.761,0-44.837-20.075-44.837-44.838
+			c0-8.509,2.37-16.465,6.486-23.243"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M461.205,309.955
+			c-0.708-1.883-1.114-3.917-1.161-6.042c-0.223-10.125,7.803-18.513,17.929-18.737c10.122-0.223,18.513,7.804,18.733,17.928
+			c0.223,10.123-7.803,18.511-17.925,18.735c-5.57,0.122-10.614-2.251-14.063-6.098"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5772" stroke-miterlimit="10" d="M841,298.445
+			c-31.689,17.466-43.217,57.316-25.747,89.004"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M271.75,398.935
+			c-20.956-13.055-33.811-37.627-30.771-63.777c4.2-36.138,36.9-62.028,73.038-57.827c36.138,4.2,62.028,36.9,57.827,73.038"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M204.399,237.872
+			c-6.257-3.039-10.571-9.453-10.571-16.876c0-10.356,8.395-18.75,18.75-18.75s18.75,8.394,18.75,18.75
+			c0,10.355-8.395,18.749-18.75,18.749c-2.561,0-5.002-0.514-7.226-1.443"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M265.481,218.102
+			c1.818,0.376,3.185,1.987,3.185,3.917c0,2.209-1.791,4-4,4s-4-1.791-4-4s1.791-4,4-4"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M264.667,218.019c0.279,0,0.552,0.029,0.815,0.083
+			"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M148.089,255.617
+			c3.974-6.367,11.043-10.603,19.101-10.603c12.426,0,22.499,10.073,22.499,22.499c0,12.426-10.073,22.499-22.499,22.499
+			c-12.425,0-22.499-10.073-22.499-22.499c0-3.587,0.84-6.979,2.333-9.988"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M267.628,218.371
+			c1.708-2.527,2.705-5.573,2.705-8.852c0-8.744-7.089-15.833-15.833-15.833s-15.833,7.089-15.833,15.833l-0.224,0.487
+			c0,19.229,15.591,34.821,34.821,34.821c3.255,0,6.405-0.446,9.394-1.282"/>
+		<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M214.076,239.578
+			c-13.715,0-24.833-11.118-24.833-24.833s11.118-24.833,24.833-24.833c12.479,0,22.807,9.202,24.568,21.19"/>
+		<g id="vertical-lines">
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M109.912,778.369"/>
+			
+				<line fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="428.479" y1="138.328" x2="428.479" y2="138.328"/>
+			
+				<line fill="none" stroke="#A152A0" stroke-width="1.5301" stroke-miterlimit="10" x1="720.919" y1="305.811" x2="720.919" y2="305.811"/>
+			
+				<line fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="882.834" y1="301.707" x2="882.834" y2="301.707"/>
+			
+				<line fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" x1="226.411" y1="367.203" x2="226.411" y2="367.203"/>
+			
+				<line fill="none" stroke="#A152A0" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="1015.619" y1="336.245" x2="1015.619" y2="336.245"/>
+			
+				<line fill="none" stroke="#A152A0" stroke-width="1.5046" stroke-miterlimit="10" x1="371.245" y1="456.02" x2="371.245" y2="456.02"/>
+			
+				<line fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" x1="788.245" y1="578.37" x2="788.245" y2="578.37"/>
+		</g>
+		<g id="draw-01">
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M358.705,76.241
+				c5.714,0,10.345,4.631,10.345,10.345c0,5.713-4.631,10.346-10.345,10.346s-10.345-4.633-10.345-10.346
+				c0-5.305,3.99-9.676,9.137-10.275"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M701.913,36.112
+				c-3.233-3.737-8.264-5.77-13.504-4.943c-8.068,1.272-13.576,8.845-12.304,16.914c1.271,8.069,8.846,13.579,16.912,12.306
+				c8.069-1.273,13.578-8.847,12.308-16.916c-0.312-1.972-0.999-3.792-1.979-5.397"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M664.174,63.546
+				c4.809,7.721,13.916,12.234,23.464,10.728c12.729-2.008,21.425-13.958,19.414-26.689c-0.812-5.166-3.265-9.669-6.744-13.061"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M376.5,99.352
+				c-2.336,6.922-9.218,11.854-16.926,11.854c-9.667,0-17.503-7.835-17.503-17.501c0-9.667,7.836-17.503,17.503-17.503"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M368.334,200.185
+				c-3.92-13.447-3.617-26.517-3.617-42.038c0-84.605,68.587-153.19,153.192-153.19c64.608,0,120.028,38.101,142.521,93.976"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M455.245,18.338
+				C478.086,6.454,503.995,0.001,531.423,0c70.535,0,130.8,41.216,155.358,103.157"/>
+		</g>
+		<g id="draw-02">
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M349.611,108.042
+				c-2.779-1.168-5.833-1.814-9.036-1.814c-12.892,0-23.338,10.448-23.338,23.337c0,9.679,5.333,17.962,13.919,21.255l-0.188-0.062
+				c20.257,4.145,34.438,21.812,34.438,43.293c0,24.552-19.904,44.454-44.453,44.454c-24.551,0-44.454-19.902-44.454-44.454
+				c0-15.294,4.368-24.617,16.129-32.616"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.4945" stroke-miterlimit="10" d="M778.02,97.6
+				c-1.64-23.736-21.413-42.483-45.565-42.483c-25.228,0-45.675,20.449-45.675,45.675c0,25.228,20.447,45.677,45.675,45.677
+				c25.227,0,45.677-20.449,45.677-45.677"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M382.662,86.453
+				c22.611-13.164,50.308-18.346,77.934-12.571c28.335,5.924,51.812,22.287,67.251,44.229l-0.45-0.697
+				c11.827,17.506,18.733,38.609,18.733,61.327c0,60.581-49.111,109.69-109.69,109.69c-28.943,0-55.271-11.214-74.877-29.533
+				l0.311,0.284c-14.631-12.567-33.552-19.58-54.352-19.58c-46.188,0-84.473,37.45-83.63,83.628
+				c0.611,33.497,20.567,62.455,47.861,75.706"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M527.458,118.626
+				c20.363-20.362,48.496-32.957,79.568-32.957c62.142,0,113.141,50.683,112.808,116.016"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M535.579,131.37
+				c19.627-19.627,44.547-30.882,74.495-30.882c59.895,0,109.76,48.969,109.76,108.864"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M365.084,181.019
+				c1.477-39.978,33.796-72.016,74.135-72.016c41.277,0,74.741,33.462,74.741,74.739"/>
+		</g>
+		<g id="draw-03">
+			<path fill="none" stroke="#A152A0" stroke-width="1.5093" stroke-miterlimit="10" d="M229.719,404.918
+				c6.867-5.355,16.302-9.016,25.682-9.179c22.516-0.391,40.502,18.136,40.502,40.502c0,22.368-18.134,40.503-40.502,40.503
+				c-2.796,0-5.526-0.282-8.163-0.821"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M248.507,476.117
+				c-12.77-2.315-21.244-14.546-18.927-27.316c2.317-12.771,14.547-21.244,27.318-18.929c12.77,2.317,21.244,14.549,18.927,27.317
+				c-2.177,12-13.105,20.205-25.01,19.231"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M308.4,190.42
+				c-3.131-0.348-5.386-3.17-5.038-6.302c0.348-3.133,3.167-5.39,6.298-5.042c3.137,0.349,5.392,3.169,5.043,6.303
+				c-0.309,2.782-2.568,4.874-5.267,5.063"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M481.726,232.752
+				c-4.169,6.357-11.356,10.555-19.525,10.555c-12.893,0-23.338-10.447-23.338-23.336c0-12.89,10.445-23.337,23.338-23.337
+				c12.887,0,23.336,10.447,23.336,23.337c0,4.315-1.171,8.357-3.213,11.824"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M292.5,161.519
+				c4.333-3.167,10.502-5.409,16.549-5.409c13.811,0,25.004,10.638,25.004,23.759c0,13.12-11.193,23.757-25.004,23.757V179.6"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M392.999,246.003
+				c-12.5-8.445-21.379-21.843-23.822-37.377l-0.051,0.07c-0.495-3.146-0.752-6.372-0.752-9.659c0-34.065,27.616-61.68,61.681-61.68
+				c34.065,0,61.684,27.616,61.684,61.68c0,12.765-3.877,24.623-10.521,34.462"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M810.686,232.867
+				c-3.53,10.608-12.83,18.846-24.652,20.459c-16.57,2.261-31.838-9.341-34.102-25.913c-2.263-16.573,9.34-31.839,25.911-34.1
+				c16.57-2.261,31.839,9.341,34.103,25.913c0.353,2.585,0.365,5.139,0.08,7.616"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M778.081,101.598
+				c0.56-14.222-10.51-26.204-24.739-26.764c-14.22-0.56-26.204,10.515-26.764,24.737c-0.562,14.224,10.517,26.206,24.736,26.766
+				c14,0.55,25.817-10.163,26.729-24.056"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M812.258,221.128
+				c0,25.474-20.649,46.124-46.124,46.124c-16.366,0-29.78-6.884-37.967-19.733l-4.667-12.833c-1.334-4-3.833-17.867-3.833-23
+				c0-46.06,36.674-85.82,82.731-85.82c46.057,0,83.396,37.337,83.396,83.396c0,46.059-37.34,83.396-83.396,83.396
+				c-25.653,0-48.604-11.583-63.899-29.805l1.517,1.805c-13.475-17.246-32.08-31.305-56.642-31.305
+				c-30.889,0-56.924,20.788-64.874,49.139"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M726,242.753
+				c-3.081-7.786-4.775-16.273-4.775-25.155c0-37.772,30.621-68.392,68.395-68.392c37.771,0,68.392,30.62,68.392,68.392
+				c0,37.771-30.62,68.392-68.392,68.392c-27.033,0-50.403-15.685-61.507-38.45"/>
+			<path fill="none" stroke="#A152A0" stroke-width="1.5" stroke-miterlimit="10" d="M880.424,239.503
+				c-6.013,40.148-40.646,70.938-82.47,70.938c-30.472,0-50.584-13.946-64.959-30.759l-0.75-1.062l1.102,1.415
+				c-13.893-17.783-31.355-29.453-56.683-29.453c-23.648,0-44.536,11.816-57.082,29.867"/>
+		</g>
+		</svg>
+	</div>
+	
+	<main class="wrapper">
+		<header id="about">
+			<nav>
+				<svg x="0px" y="0px" width="320px" height="50px" viewBox="0 0 320 50">
+					<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M50,43
+						c0,0,15.46-36.666,15.667-36.667S81,43,81,43"/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="92.335" y1="43.332" x2="92.333" y2="5.999"/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="78.083" y1="5.999" x2="106.917" y2="5.999"/>
+					<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M155.542,40.424
+						C152.797,42.061,149.59,43,146.163,43c-10.125,0-18.333-8.209-18.333-18.333c0-10.125,8.208-18.333,18.333-18.333
+						c3.387,0,6.559,0.918,9.282,2.52"/>
+					<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M239,43.249V6.333h9
+						l-0.414,0.003c0.083-0.002,0.166-0.004,0.249-0.004c4.511,0,8.167,3.656,8.167,8.167c0,4.51-3.656,8.167-8.167,8.167h-0.001h-8.667"
+						/>
+					<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" points="282.75,6.25 
+						262.75,6.25 262.75,42.75 283.25,42.75 "/>
+					<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M290,43.083V6.333h9
+						l-0.414,0.003c0.083-0.002,0.166-0.004,0.249-0.004c4.511,0,8.167,3.655,8.167,8.167c0,4.51-3.656,8.166-8.167,8.166h-0.001h-8.667"
+						/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="298.252" y1="22.916" x2="307.75" y2="43.125"/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="199.835" y1="17.249" x2="306.002" y2="17.249"/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="190.668" y1="33.916" x2="54" y2="33.875"/>
+					<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M203.109,10.453
+						c1.5-1.188,3.312-1.188,4.422-1.219c4.485-0.126,8.125,3.638,8.125,8.125s-3.638,8.125-8.125,8.125s-8.125-3.638-8.125-8.125
+						c0-2.335,0.985-4.44,2.562-5.922l-0.264,0.266c3.317-3.317,7.9-5.37,12.963-5.37c10.126,0,18.334,8.208,18.334,18.333
+						c0,10.126-8.208,18.333-18.334,18.333c-10.125,0-18.333-8.207-18.333-18.333c0-10.125-8.208-18.333-18.334-18.333
+						c-10.125,0-18.333,8.208-18.333,18.333c0,10.126,8.208,18.333,18.333,18.333c2.893,0,5.629-0.67,8.062-1.863l1.697-1.028
+						c3.334-2.674,4.075-7.272,1.853-10.786c-2.413-3.811-7.457-4.945-11.269-2.533s-4.946,7.456-2.535,11.267
+						c2.413,3.812,7.458,4.947,11.27,2.536c0.238-0.15,0.465-0.312,0.682-0.483"/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="11.499" y1="43.167" x2="11.499" y2="5.667"/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="42.333" y1="5.5" x2="42.041" y2="43.33"/>
+					<line fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="11.501" y1="5.332" x2="41.876" y2="42.994"/>
+				</svg>
+				<ul>
+					<li><a href="#about">Home</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#teach">Teach</a></li>
+					<li><a href="https://medium.com/@natacoops">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<h1>Hello<span class="accent">.</span></h1>
+			<p>My name is Nat Cooper. I'm a <em>front-end designer</em> based out of downtown Toronto. I create visually compelling applications and unique digital experiences.</p>
+			<p>As a designer who is passionate about interactivity, code is a vital part of my creative process. Always curious, I have a growing list of things I want to learn or improve on. With a passion for teaching and public speaking, I am also committed to helping others realize they can become powerful creators of technology.</p> 
+			<p>Current obsession<span class="accent">:</span> SVG animations, <a href="http://sketchapp.com">SketchApp</a> and <i class="devicons devicons-sass"></i><br>Next on the list<span class="accent">:</span> Ruby on Rails <i class="devicons devicons-ruby"></i></p>
+		</header>
+		<section class="work" id="work">
+			<h2>Selected work<span class="accent">:</span></h2>
+			<ul>
+				<li class="first folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>Animated Self Portrait</h3>
+							<p>Front-End Design & Development, SVG Animations, Vector Illustration</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://natcooper.com"><img src="img/work-selfportrait-feature.jpg" alt="Animated Self Portrait"></a>			
+							</div>
+							<p class="technology">HTML5, CSS3, Sass, JavaScript, SVG Animations, PHP, Responsive Design</p>
+							<p>My most recent site design started off as an experiment - an excuse to play with SVG line animations and master the pen tool in Adobe Illustrator.</p>
+							<p>One thing lead to another and I had meticulously animated all the curly lines using CSS, and decided to use it as the main feature of my new personal brand - it was certainly memorable, after all. I wrote a blog post about the redesign process - <a href="https://medium.com/@natacoops/natcooper-com-v-2-0-5a02caf41b99">read it here</a>.</p>
+							<p>The self-portrait illustration itself has been integrated into my current site design.</p>
+							<a href="http://natcooper.com" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>The Code Mobile</h3>
+							<p>Front-End Design & Development, Vehicle Design, Vector Illustration</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://codemobile.rocks" ><img src="img/work-codemobile-feature.jpg" alt="Code Mobile"></a>					
+							</div>
+							<p class="technology">HTML5, CSS3 Animations, jQuery, Responsive Design</p>
+							<p>When Ladies Learning Code asked me to design a truck for superheroes, I simply couldn't resist! This project provided me with the perfect excuse to design something bold, funky, and comic-book inspired - all while supporting a cause that is very close to my heart: teaching people to code.</p>
+							<p>When considering the design of the truck, I wanted people to enjoy physically engaging with the vehicle - so it features a speech bubble that makes the passengers seem like they are part of the design. There’s also a blank computer screen that you can write on with erasable marker to update the number of learners that have been reached across Canada.</p>
+							<p>I created a handful of different versions of the logo for various uses - including an embroidered badge, responsive website, stickers, apparel, signage and a branded tent.</p>
+							<a href="http://codemobile.rocks" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>Nerdy Holidays</h3>
+							<p>Front-End Design & Development, SVG Animations, Vector Illustration</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://nerdyholidays.com"><img src="img/work-nerdyholidays-feature.jpg" alt="Nerdy Holidays"></a>
+							</div>
+							<p class="technology">HTML5, CSS3, Sass, JavaScript, SVG Animations, GreenSock, Responsive Design</p>
+							<p>My love for web animations quickly lead me to SVG Morphing. As soon as I discovered that you could morph one shape into another, I was looking for any excuse to morph things. The first SVG morphing project I created for fun was - of course - <a href="http://codepen.io/natacoops/pen/BoVqXN">a mighty MORPHin' power ranger</a>.</p>
+							<p>This got a bit of attention online, so I also wrote a short <a href="https://medium.com/sketch-app-sources/svg-metamorphosis-a9d6ca14fce2">tutorial</a> on how to create and morph a butterfly design using Sketch and <a href="http://snapsvg.io/">Snap.svg</a>.</p>
+							<p>To celebrate the holiday season - and satisfy my own nerdyness - I felt inspired to create this last morphing project using 60 polygons. Happy Nerdy Holidays!</p>
+							<a href="http://nerdyholidays.com" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>New Spark Creative Agency</h3>
+							<p>Front-End Design & Development</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://natcooper.com/newspark"><img src="img/work-newspark-feature.jpg" alt="New Spark Creative Agency"></a>						
+							</div>
+							<p class="technology">HTML5, CSS3, Sass, JavaScript, Responsive Design</p>
+							<p>In October 2015, #<a href="http://www.wocintechchat.com/">WOCinTechChat</a> released a series of <a href="https://www.flickr.com/photos/wocintechchat/">free stock photos</a> of women of colour in tech. I was already thinking of designing a one-page theme for a hypothetical digital company for my portfolio, so it was perfect timing.</p>
+							<p>Not only did I have great content and stock photography to use, but by using these photos I'm able to show a different representation of all women in tech.</p>
+							<p>The video background was found on <a href="http://www.coverr.co/">Coverr.co</a>, and the font used is <a href="http://www.1001freefonts.com/mervale_script.font">Mervale Script</a>.</p>
+							<a href="http://natcooper.com/newspark" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>HackerYou Alumni Lounge</h3>
+							<p>Front-End Design, Vector Illustration</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://lounge.hackeryou.com"><img src="img/work-hyalumni-feature.jpg" alt="HackerYou Alumni Lounge"></a>
+							</div>
+							<p class="technology">Responsive Design</p>
+							<p>I had the pleasure of designing the online experience for the <a href="http://hackeryou.com">HackerYou</a> Alumni Lounge. It is a simple web app that allows users to sign up for the lounge, and also provides administrators with an interface where they can easily manage member information.</p>
+							<p>The design includes custom illustrations, iconography and UI elements. The original HackerYou branding - designed by the talented <a href="http://studiofunction.com">Studio Function</a> team - inspired the overall modern, "flat" appearance.</p>
+							<a href="http://lounge.hackeryou.com" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>Bite Diabetes</h3>
+							<p>Front-End Design & Development, WordPress Customization</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://bitediabetes.com"><img src="img/work-bitediabetes-feature.jpg" alt="BiteDiabetes.com"></a>						
+							</div>
+							<p class="technology">HTML5, CSS3, Sass, JavaScript, PHP, Wordpress, Responsive Design</p>
+							<p><a href="https://twitter.com/bitediabetes">Tannis Cohen</a> is a human rights lawyer, former CBC restaurant reviewer and ultimate foodie. On top of all that, she is also a joy to work with, and I know first hand that her food is delicious!</p>
+							<p>Bite Diabetes is a custom wordpress site with social media integration, SEO and custom print functionality for recipe cards. Modern illustrations and iconography were designed for her brand, and incorporated into the responsive site design and business cards. The beautiful <a href="http://salomefont.com/">Salomé</a> font was used and modified for use in the logomark - I especially fell in love with the "it" ligature.</p>
+							<a href="http://bitediabetes.com" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>Indigo Custom Shops</h3>
+							<p>Front-End Development, CSS3 Animations, Interaction Design</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="https://www.chapters.indigo.ca/en-ca/gifts/wedding"><img src="img/work-indigo-feature.jpg" alt="Indigo Custom Shops"></a>			
+							</div>
+							<p class="technology">HTML5, CSS3, JavaScript, jQuery, CSS3 Animations, Interaction Design</p>
+							<p>The Wedding Shop features elegant animated champagne bubbles in the top header and the main banner image on the left. There is also an animated background on one block, and hover effects applied to the top nav.</p>
+							<p>During my time at Indigo, I was responsible for the front-end development of countless custom shops, including:</p>
+							<div class="over-wrap">
+								<ul class="override">
+									<li><a href="https://www.chapters.indigo.ca/en-ca/comic-book-shop">Comic Book Shop</a></li>
+									<li><a href="https://www.chapters.indigo.ca/en-ca/books/colouring-books">Colouring Book Shop</a></li>
+									<li><a href="https://www.chapters.indigo.ca/en-ca/mothers-day/">Mother's Day Shop</a></li>
+								</ul>
+								<ul class="override">
+									<li><a href="https://www.chapters.indigo.ca/en-ca/valentines-day">Valentine's Day Shop</a></li>
+									<li><a href="https://www.chapters.indigo.ca/en-ca/electronics/fitness/fitbit/">Fitbit Shop</a></li>
+									<li><a href="https://www.chapters.indigo.ca/en-ca/kids/toys/dinosaur-shop/">Dinosaur Shop</a></li>
+								</ul>
+							</div>
+							<p> I also provided site maintenance by scheduling pop-ups, promo change-overs and other support for the online merchandising staff.</p>
+							<a href="https://www.chapters.indigo.ca/en-ca/gifts/wedding" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>Mother's Day Generator</h3>
+							<p>Front-End Design & Development, API Integration, Responsive Design</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://nesse.co/mothers-day/"><img src="img/work-mothersday-feature.jpg" alt="Mother's Day App"></a>
+							</div>
+							<p class="technology">HTML5, CSS3, JavaScript, jQuery, API Integration</p>
+							<p>This Mother's Day app will generate recipes and a custom designed, printable greeting card for your Mom, based on what "kind" of Mom you consider her to be. There are 10 options to choose from, including a "Traditional" Mom, a "Disco Diva" Mom and "A Total Sweetheart" Mom.</p>
+							<p>Based on your choice, appropriate recipes will be generated using a combination of criteria built into the <a href="https://developer.yummly.com/">Yummly API</a> (which was used to power this project).</p>
+							<p>This was a fun excuse to experiment with API integration and focus more on Front-End Development instead of strictly design. There's also a little countdown to Mother's Day included.</p>
+							<a href="http://nesse.co/mothers-day/" class="live">view live</a>
+						</li>
+					</ul>
+				</li>
+				<li class="folio-item">
+					<div class="folio-wrap">
+						<div>
+							<h3>Casa Loma (Case Study)</h3>
+							<p>Web Design, Vector Illustration</p>
+						</div>
+						<a><i class="fa fa-angle-down"></i></a>
+					</div>
+					<ul class="expanded">
+						<li>
+							<div>
+								<a href="http://natcooper.com/img/work-casaloma-webdesign.jpg"><img src="img/work-casaloma-feature.jpg" alt="Casa Loma Case Study"></a>					
+							</div>
+							<p class="technology">Web Design, Branding & Visual Identity</p>
+							<p>While I was in University, I worked as a tour guide during the summer. I frequently spoke with tourists about attractions all across Toronto - but when it came to Casa Loma I had a hard time finding information on their <a href="http://casaloma.org/">current site</a>.</p>
+							<p>I recently took it upon myself to reimagine the site if it had a modern, elegant design to attract visitors. I had fun researching the design trends from the turn of the century (the era that the castle was built). I quickly fell in love with the "steampunk" aesthetic and designed the Casa Loma wordmark in that style.</p>
+							<p>Their current site has an image slider at the top with rich photography - although this is eye-catching, I think including their <a href="https://www.instagram.com/casalomatoronto/">instagram photos</a> is a nicer option, especially since their account is so active. The high-res photos would of course still be included in a gallery on a sub-page.</p>
+							<a href="http://natcooper.com/img/work-casaloma-webdesign.jpg" class="live">view design</a>
+						</li>
+					</ul>
+				</li>
+			</ul>			
+		</section>
+		<section class="teach" id="teach">
+			<h2>Never stop learning<span class="accent">.</span></h2>
+			<p>I am proud to be an instructor at <a href="http://ladieslearningcode.com">Ladies Learning Code</a> (LLC) - a not-for-profit organization which provides beginner-level workshops that aim to introduce various aspects of web development. I am also lead mentor at <a href="http://hackeryou.com/about/">HackerYou</a>, where I help full-time and part-time students master intermediate Front-End Web Development concepts.</p>
+			<p>In December 2015, I was featured on <a href="http://www.ytv.com/blog/coded-holiday-card-episode-1">YTV.com</a> representing LLC and teaching kids across Canada how to code a digital holiday card. I also appeared on <a href="https://soundcloud.com/whatshesaid167/ladies-learning-code-ytvs">What She Said - SiriusXM Radio</a> where I encouraged listeners to learn code and create &ldquo;cool techie art!&rdquo;</p>
+			<p>Needless to say, this is something I'm quite passionate about. Here's a list of upcoming workshops I will be leading at LLC:</p>
+			<ul>
+				
+				<li class="first fadeout">
+					<div>
+						<h3>HTML & CSS - build a Multi Page Website</h3>
+						<p>Nov. 14, 2015 • 10:00am - 4:00pm</p>
+					</div>
+					<a class="more">more info<i class="fa fa-angle-right"></i></a>
+				</li>
+				<li>
+					<div>
+						<h3>HTML & CSS - build a One Page Website</h3>
+						<p>Jan. 26, 2016 • 10:00am - 4:00pm</p>
+					</div>
+					<a href="http://ladieslearningcode.com/events/html-css-for-beginners-one-page-website/" class="more">more info<i class="fa fa-angle-right"></i></a>
+				</li>
+				<li>
+					<div>
+						<h3>HTML & CSS - build a One Page Website</h3>
+						<p>Apr. 12 & Apr. 19, 2016 • 6:00pm - 9:00pm</p>
+					</div>
+					<a href="http://ladieslearningcode.com/events/html-css-for-beginners-one-page-website-two-days/" class="more">more info<i class="fa fa-angle-right"></i></a>
+				</li>
+			</ul>
+		</section>
+		<section class="contact" id="contact">
+			<h2>Get in touch<span class="accent">.</span></h2>
+			<div>
+				<p>I always welcome a new creative challenge and I love collaborating with people who are passionate about their work. I’m currently available for select projects and contracts.</p>
+			</div>
+			<div>
+				<form id="form1" name="form1" method="post" action="../mailer.php">
+					<div class="half">
+						<label for="name">Name</label>
+						<input id="name" name="name" type="text">
+					</div>
+					<div class="halfTwo">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="text">
+					</div>
+					<div class="dropdown">
+						<label for="subject">Subject</label>
+						<select id="subject" name="subject" type="text">
+							<option class="formSubject" value="" disabled selected> </option>
+							<option value="Just saying hello!">Just saying hello!</option>
+							<option value="Design project">Design project</option>
+							<option value="Development project">Development project</option>
+							<option value="Speaking / teaching">Speaking / teaching</option>
+							<option value="Exciting full-time opportunity">Full-time opportunity</option>
+						</select>
+					</div>
+					<div class="message">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" ></textarea>
+					</div>
+					<input name="submit" type="submit">
+				</form>
+			</div>
+		</section>
+		<footer>
+
+			<ul>
+				<li class="social"><a href="https://twitter.com/natacoops" class="fa fa-twitter"></a></li>
+				<li class="social"><a href="https://www.linkedin.com/in/natacoops" class="fa fa-linkedin"></a></li>
+				<li class="social"><a href="https://medium.com/@natacoops" class="fa fa-medium"></a></li>
+				<li class="social"><a href="https://dribbble.com/natacoops" class="fa fa-dribbble"></a></li>
+				<li class="social"><a href="http://codepen.io/natacoops" class="fa fa-codepen"></a></li>
+				<li class="social"><a href="https://github.com/natacoops" class="fa fa-github"></a></li>
+			</ul>
+			<p class="follow">Let's be online friends!<br><a href="https://twitter.com/natacoops">@natacoops</a></p>
+
+		</footer>
+		<p class="copyright">&copy; Nat Cooper 2016</p>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<script src="js/scripts.js"></script>
+</body>
+</html>
